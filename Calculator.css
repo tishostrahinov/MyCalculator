@@ -1,0 +1,88 @@
+*{
+	box-sizing: border-box;
+
+}
+
+body{
+	display:grid;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	overflow: hidden;
+	background: #5c50f8;
+}
+
+
+.calculator{
+	background: #5c50f8;
+	color: #c7c7c7;
+	box-shadow: 12px 12px 24px 2px rgba(255,255,255,0,0.05);
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-areas: "display display display display" "c signed percent divide" "seven eight nine times" "four five six minus" "one two three plus" "zero zero decimal equals";
+	align-items: center;
+	justify-content: center;
+	grid-gap: 25px;
+	padding: 20px;
+	width: 80%;
+	border-radius: 61px;
+}
+
+input{
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.display{
+	box-shadow: 12px 12px 24px #360036, 
+                -12px -12px 24px #4a004a,
+	   inset 12px 12px 24px rgba(0, 0, 0, 0.51),
+	   inset -12px -12px 24px rgba(255, 255, 255, 0.05);
+	   border: 3px solid rgba(255, 255, 255, 0.05);
+	   color: #03a9f4;
+}
+
+.neumorphic{
+	box-shadow: 12px 12px 24px #360036, 
+                -12px -12px 24px #4a004a;
+	   border-radius: 50%;
+	   border: 3px solid rgba(255, 255, 255, 0.05);
+}
+
+.neumorphic:hover{
+	box-shadow: border: inset 6px 6px 5px rgba(0, 0, 0, 0.51),
+	   inset -6px -6px 5px rgba(255, 255, 255, 0.05);
+	   color: #400040;
+}
+.display{
+	border-radius: 12px;
+	height: 60px;
+	transition: all 0.1s ease-in-out;
+	line-height: 60px;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 32px;
+}
+
+.neumorphic{
+	text-align: center;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+}
+
+.zero{
+	width: 80%;
+	border-radius: 12px;
+}
+
+.display{
+	grid-area: display;
+}
+
+.zero{
+	grid-area: zero;
+}

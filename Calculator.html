@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="Calculator.css" />
+	<title>Calculator</title>
+</head>
+<body>
+	<form name="calc" class="calculator">
+		<input type="text" name="txt" readonly="" class="display" />
+
+		<span class="c neumorphic" onclick="document.calc.txt.value =''"
+		>C</span>
+		<span class="signed neumorphic" onclick="document.calc.txt.value +='+/-'"
+		>+/-</span>
+		<span class="percent neumorphic" onclick="document.calc.txt.value +='%'"
+		>%</span>
+		<span class="divide neumorphic" onclick="document.calc.txt.value +='/'"
+		>/</span>
+		<span class="seven neumorphic" onclick="document.calc.txt.value +='7'"
+		>7</span>
+		<span class="eight neumorphic" onclick="document.calc.txt.value +='8'"
+		>8</span>
+		<span class="nine neumorphic" onclick="document.calc.txt.value +='9'"
+		>9</span>
+		<span class="times neumorphic" onclick="document.calc.txt.value +='*'"
+		>*</span>
+		<span class="four neumorphic" onclick="document.calc.txt.value +='4'"
+		>4</span>
+		<span class="five neumorphic" onclick="document.calc.txt.value +='5'"
+		>5</span>
+		<span class="six neumorphic" onclick="document.calc.txt.value +='6'"
+		>6</span>
+		<span class="plus neumorphic" onclick="document.calc.txt.value +='+'"
+		>+</span>
+		<span class="one neumorphic" onclick="document.calc.txt.value +='1'"
+		>1</span>
+		<span class="two neumorphic" onclick="document.calc.txt.value +='2'"
+		>2</span>
+		<span class="three neumorphic" onclick="document.calc.txt.value +='3'"
+		>3</span>
+		<span class="minus neumorphic" onclick="document.calc.txt.value +='-'"
+		>-</span>
+		<span class="equals neumorphic" onclick="document.calc.txt.value 
+		= eval(calc.txt.value)"
+		>=</span>
+		<span class="zero neumorphic" onclick="document.calc.txt.value +='0'"
+		>0</span>
+		<span class="decimal neumorphic" onclick="document.calc.txt.value +='.'"
+		>.</span>
+	</form>
+	
+</body>
+</html>
